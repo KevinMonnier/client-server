@@ -1,5 +1,7 @@
 *.class
 /bin
+/target
+/build
 
 # Package Files #
 *.jar
@@ -10,5 +12,4 @@
 /.project
 /.springWebflow
 /.settings
-/target
-/build
+/.metadata
