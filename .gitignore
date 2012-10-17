@@ -1,10 +1,4 @@
-*.class
-.classpath
-.project
-bin
-.settings
-
-# Package Files #
-*.jar
-*.war
-*.ear
+/.classpath
+/.project
+/.springWebflow
+/.settings
