@@ -28,7 +28,7 @@ public class FileCompileController {
 		}
 		
 		model.addAttribute("fileList", fileList);		
-		
+		System.out.println("kzfjdnsblkj");
 		return "FileCompileForm";
 	}
 	
