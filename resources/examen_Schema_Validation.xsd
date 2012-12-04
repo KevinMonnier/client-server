@@ -1,0 +1,129 @@
+<xs:schema attributeFormDefault="unqualified"
+	elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="examen">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="informations">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="titre" />
+							<xs:element type="xs:string" name="objet" />
+							<xs:element type="xs:string" name="date" />
+							<xs:element type="xs:string" name="auteur" />
+							<xs:element type="xs:string" name="destination" />
+							<xs:element type="xs:string" name="version" />
+							<xs:element type="xs:string" name="commentaires" />
+							<xs:element type="xs:string" name="UV" />
+							<xs:element type="xs:string" name="matiere" />
+							<xs:element type="xs:positiveInteger" name="coefficient" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element type="xs:string" name="introduction" />
+				<xs:element name="ennonce">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="eleve">
+
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:string" name="nom" />
+										<xs:element type="xs:string" name="prenom" />
+										<xs:element type="xs:string" name="promo" />
+										<xs:element type="xs:string" name="groupe" />
+										<xs:element type="xs:string" name="professeur" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="exercice" minOccurs="1" maxOccurs="unbounded">
+
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:string" name="introduction" />
+										<xs:element name="question" maxOccurs="unbounded"
+											minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="consigne">
+														<xs:complexType mixed="true">
+															<xs:sequence>
+																<xs:element name="introduction"></xs:element>
+																<xs:choice>
+																	<xs:element name="choixMultiple" maxOccurs="unbounded"
+																		minOccurs="0">
+																		<xs:complexType>
+																			<xs:simpleContent>
+																				<xs:extension base="xs:string">
+																					<xs:attribute type="xs:byte" name="number"
+																						use="optional" />
+																				</xs:extension>
+																			</xs:simpleContent>
+																		</xs:complexType>
+																	</xs:element>
+																	<xs:element name="texte" type="xs:string">
+																	</xs:element>
+																	<xs:element name="code" type="xs:string">
+																	</xs:element>
+																	<xs:element name="caseACocher">
+																	<xs:complexType>
+                                                                            <xs:simpleContent>
+                                                                                <xs:extension base="xs:string">
+                                                                                    <xs:attribute type="xs:byte" name="number"
+                                                                                        use="optional" />
+                                                                                </xs:extension>
+                                                                            </xs:simpleContent>
+                                                                        </xs:complexType>
+																	</xs:element>
+																</xs:choice>
+
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="reponse">
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="xs:string">
+																	<xs:attribute type="xs:string" name="auteur"
+																		use="optional" />
+																	<xs:attribute type="xs:string" name="version"
+																		use="optional" />
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="correction">
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="xs:string">
+																	<xs:attribute type="xs:string" name="version"
+																		use="optional" />
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute type="xs:string" name="type" use="optional" />
+												<xs:attribute type="xs:string" name="numero"
+													use="optional" />
+												<xs:attribute type="xs:string" name="language"
+													use="optional" />
+												<xs:attribute type="xs:string" name="coefficient"
+													use="optional" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute type="xs:string" name="title" />
+									<xs:attribute type="xs:byte" name="numero" />
+									<xs:attribute type="xs:string" name="language" />
+									<xs:attribute type="xs:byte" name="coefficient" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+
+				<xs:element type="xs:string" name="conclusion" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
