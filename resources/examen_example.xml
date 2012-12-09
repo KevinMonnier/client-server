@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<examen>
+	<information>
+		<titre></titre>
+		<objet></objet>
+		<date></date>
+		<auteur></auteur>
+		<destination></destination>
+		<version></version>
+		<commentaires></commentaires>
+		<UV></UV>
+		<matiere></matiere>
+		<coefficient></coefficient>
+	</information>
+
+	<introduction></introduction>
+	<ennonce>
+		<eleve>
+			<nom></nom>
+			<prenom></prenom>
+			<promo></promo>
+			<groupe></groupe>
+			<professeur></professeur>
+		</eleve>
+
+		<exercice title="Exercice …" numero="1" language=""
+			coefficient="">
+			<introduction></introduction>
+			<question numéro="" language="" coefficient="">
+				<consigne></consigne>
+				<type name="questionChoixMultpiples">
+					<choix number="1"></choix>
+					<choix number="2"></choix>
+				</type>
+
+				<reponse version=""></reponse>
+				<correction version=""></correction>
+			</question>
+			<question numéro="" language="" coefficient="">
+				<consigne></consigne>
+				<type name="texte">
+
+				</type>
+				<reponse version=""></reponse>
+				<correction version=""></correction>
+			</question>
+			<question numéro="" language="" coefficient="">
+				<consigne></consigne>
+				<type name="code">
+
+				</type>
+				<reponse version=""></reponse>
+				<correction version=""></correction>
+			</question>
+			<question type="case à cocher" numéro="" language=""
+				coefficient="">
+				<consigne></consigne>
+				<type name="case à cocher">
+					<case number="1"></case>
+					<case number="2"></case>
+					<case number="3"></case>
+				</type>
+				<reponse version=""></reponse>
+				<correction version=""></correction>
+			</question>
+
+
+		</exercice>
+		<exercice title="Exercice …" numero="2" language=""
+			coefficient="">
+			<introduction></introduction>
+			<question numéro="" language="" coefficient="">
+				<consigne></consigne>
+				<type name="questionChoixMultpiples">
+					<choix number="1"></choix>
+					<choix number="2"></choix>
+				</type>
+
+				<reponse version=""></reponse>
+				<correction version=""></correction>
+			</question>
+			<question numéro="" language="" coefficient="">
+				<consigne></consigne>
+				<type name="texte">
+
+				</type>
+				<reponse version=""></reponse>
+				<correction version=""></correction>
+			</question>
+			<question numéro="" language="" coefficient="">
+				<consigne></consigne>
+				<type name="code">
+
+				</type>
+				<reponse version=""></reponse>
+				<correction version=""></correction>
+			</question>
+			<question type="case à cocher" numéro="" language=""
+				coefficient="">
+				<consigne></consigne>
+				<type name="case à cocher">
+					<case number="1"></case>
+					<case number="2"></case>
+					<case number="3"></case>
+				</type>
+				<reponse version=""></reponse>
+				<correction version=""></correction>
+			</question>
+
+		</exercice>
+
+
+	</ennonce>
+	<conclusion></conclusion>
+</examen>
